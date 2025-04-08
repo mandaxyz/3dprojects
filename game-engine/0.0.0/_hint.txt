@@ -1,0 +1,32 @@
+"""
+Hint generator, unlock
+Juoz-k_SiBH_iF97DOiir4ZWlxeprqzu-9Wy62FsG2ItCyyKFg_b1tLMsy6wuEex4mJOTuo7tjVPyuy_t1_orH9Em1VZs15cD4KdrDm4Esyx2FfDEMuft78zDvpou8sAqPqldxEyzsqgzuz
+with the key "**********************" (hint: "JeHoVaH'sNaMe" + "_" + 15-last-digits-of-the-reversed-pi["."="_"])
+
+Password recovery, unlock
+xP4f62e3UzMppz3xm
+with the key from the generated hint
+
+I use .zip because it's standarized as PKZIP. I hope it will always be supported in 1000 years.
+"""
+          
+key    = "?"
+unlock = True
+code   = "hello"
+
+def swap(s,x,y): s=list(s); t=s[x]; s[x]=s[y]; s[y]=t; return "".join(s)
+def shuffle(s,seed,unlock_): # Debug: (x,y)=(2,5) --> ..x..y....
+    for i in range(7*seed): # This removes the repeating pattern.
+        k = (7*seed)-1 - i if unlock_ else i; (x,y)=(k*k+2*seed,k*k*k+3*seed)
+        s = swap(s, (x,y)[unlock_] % len(s), (y,x)[unlock_] % len(s))
+    return s
+b64="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_"
+def f0(a,b,unlock_):return b64[(b64.find(a) + (-1, 1)[unlock_] * b64.find(b)) % len(b64)]
+def f(s,K,unlock_): return "".join([f0(s[i],K[i%len(K)],unlock_) for i in range(len(s))])
+def lock_or_unlock(s,K,unlock_):
+    print(".");seed=sum([10*b64.find(K[i])**2 for i in range(len(K))]) # Hidden behind *
+    return f(shuffle(f(s, K, unlock_), seed, unlock_), K, unlock_)
+# The codes must not contain spaces, as they will be converted to "_".
+codes = [code]
+for (i,e) in enumerate(codes): codes[i]=lock_or_unlock(codes[i],key,unlock)
+print(codes[0])
