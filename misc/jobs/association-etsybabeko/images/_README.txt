@@ -1,1 +1,0 @@
-For maximum compatibility, .jpg and .png are used because Microsoft Edge (2025) does not support .avif.
