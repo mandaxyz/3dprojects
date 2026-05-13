@@ -19,6 +19,12 @@ PROHIBITED ACTIONS:
 
 This software is provided "AS IS", without any warranty of any kind.
 
+ENFORCEMENT:
+Unauthorized use of this software may result in legal action under
+applicable copyright and intellectual property laws. This may include
+takedown requests and removal of unauthorized copies or deployments.
+
+CONTACT:
 For licensing, permission requests, or collaboration inquiries, please 
 contact Manda Rajoelisolo at: mandadream3d@gmail.com
 
