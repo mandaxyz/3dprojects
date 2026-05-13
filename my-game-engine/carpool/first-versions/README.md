@@ -15,7 +15,3 @@ The files in this directory are build artifacts (`.jar` files) corresponding to 
 The development timeline is supported by GitHub commit history and file timestamps, which together provide the primary record of creation and evolution.
 
 This folder is intended for historical and documentation purposes only.
-
----
-
-**Author:** Manda Rajoelisolo  
