@@ -7,8 +7,9 @@ Copyright © 2026 Manda Rajoelisolo. All Rights Reserved.
 This proprietary module (including source code, compiled JAR files, and all 
 related artifacts) was developed by Manda Rajoelisolo.
 
-It is licensed **only** for use in projects explicitly authorized in writing 
-by the author. Any other use is strictly prohibited.
+This software is licensed **only** for use in projects that have received 
+explicit written permission from the author. Any unauthorized use is
+strictly prohibited.
 
 PROHIBITED ACTIONS:
 - Using, copying, modifying, distributing, integrating, or reusing this 
