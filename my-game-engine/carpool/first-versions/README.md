@@ -10,7 +10,7 @@ This folder contains the original first versions of the project, stored as compi
 
 ## Note
 
-The files in this directory are build artifacts (`.jar` files) corresponding to early compiled outputs of the project.
+This directory may include both source code and compiled artifacts (.jar files) corresponding to early versions of the project.
 
 The development timeline is supported by GitHub commit history and file timestamps, which together provide the primary record of creation and evolution.
 
